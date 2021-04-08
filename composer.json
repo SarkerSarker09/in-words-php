@@ -1,0 +1,17 @@
+{
+    "name": "number-to-in-words-php/composer-autoloading",
+    "description": "Number to in words php",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Samer Sarker Khokon",
+            "email": "samerseu@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "lib/inwords.php"
+        ]
+    }
+}
