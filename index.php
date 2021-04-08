@@ -7,10 +7,10 @@ use lib\InWords;
 
 
 $num = 8569435;
-$inWords = new InWords();
+// $inWords = new InWords();
 try
 {
-    echo $num ." = ". $inWords->convertNumberToInWords($num) . " Only";
+    echo $num ." = ". InWords::convertNumberToInWords($num) . " Only";
 }
 catch(Exception $e)
 {

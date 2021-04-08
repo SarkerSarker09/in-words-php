@@ -3,7 +3,7 @@ namespace lib;
 
 class InWords {
 
-    public function convertNumberToInWords($number) 
+    public static function convertNumberToInWords($number) 
     { 
         if (($number < 0) || ($number > 999999999))
         { 
@@ -29,22 +29,22 @@ class InWords {
     
         if ($crore) 
         { 
-            $inWords .= $this->convertNumberToInWords($crore) . " Crore "; 
+            $inWords .= self::convertNumberToInWords($crore) . " Crore "; 
         } 
 
         if ($lakh) 
         { 
-            $inWords .= $this->convertNumberToInWords($lakh) . " Lakh"; 
+            $inWords .= self::convertNumberToInWords($lakh) . " Lakh"; 
         } 
     
         if ($thousand) 
         { 
-            $inWords .= (empty($inWords) ? "" : " ") . $this->convertNumberToInWords($thousand) . " Thousand"; 
+            $inWords .= (empty($inWords) ? "" : " ") . self::convertNumberToInWords($thousand) . " Thousand"; 
         } 
     
         if ($hundred) 
         { 
-            $inWords .= (empty($inWords) ? "" : " ") . $this->convertNumberToInWords($hundred) . " Hundred"; 
+            $inWords .= (empty($inWords) ? "" : " ") . self::convertNumberToInWords($hundred) . " Hundred"; 
         } 
     
         // 1 upto 19 in word        
