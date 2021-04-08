@@ -5,7 +5,7 @@ require 'vendor/autoload.php';
 use lib\InWords;
 
 
-echo "index";
+
 $num = 8569435;
 $inWords = new InWords();
 try
