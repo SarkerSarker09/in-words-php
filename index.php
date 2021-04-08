@@ -5,11 +5,9 @@ class InWords {
 
     public function convertNumberToInWords($number) 
     { 
-        $my_number = $number;
-    
         if (($number < 0) || ($number > 999999999))
         { 
-            throw new Exception("Number is out of range");
+            throw new Exception("Your Number is out of range");
         } 
 
         $crore = floor($number / 10000000);     // Crore 
